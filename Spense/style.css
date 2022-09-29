@@ -1,0 +1,436 @@
+@import url(https://fonts.google.com/specimen/Cabin);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    font-family: 'open Sans', sans-serif;
+}
+p{
+    color: rgba(0, 0, 0, 0.804);
+}
+.main{
+    background-color: rgba(128, 128, 128, 0.194);
+    padding: 40px 120px 20px;
+}
+.main nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main nav ul li{
+    margin-left: 20px;
+    font-weight: 600;
+}
+/* nav ul.menu li img{
+    display:none;
+} */
+.main nav ul li a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding:15px 20px;
+    border-radius: 5px;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+main .text{
+    margin-top:10rem;
+}
+main .text h1{
+    font-size: 3rem;
+}
+main .text p{
+    margin: 20px 0;
+    word-wrap: break-word;
+    width: 35rem;
+    line-height: 25px;
+}
+main .mock-d{
+    background-image: url(Assets/Hero-Image-Desktop.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 42rem;
+    height: 42rem;
+}
+.icon li{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.icon li img{
+    margin-right: 10px;
+}
+span{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.804);
+}
+form{
+    padding: 20px 0 0;
+}
+form input{
+    padding: 14px 20px;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.413);
+    border-radius: 5px;
+}
+ form a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding:15px 20px;
+    border-radius: 5px;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 120px;
+}
+.social img{
+    width: 8%;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.194);
+    margin: 40px 120px;
+    height: 23rem;
+}
+section .article{
+    margin: 70px 50px 0;
+    
+}
+section .article h1{
+    font-size: 2.5rem;
+    word-wrap: break-word;
+    width:24rem ;
+}
+section .article p{
+    line-height: 25px;
+    word-wrap: break-word;
+    width:27rem ;
+    margin-bottom: 30px;
+}
+section .article a{
+    color: rgba(0, 0, 0, 0.804);
+    font-weight: 600;
+    font-size: 18px;
+}
+section .mock-p{
+    background-image: url(Assets/Phone\ Desktop.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 2rem;
+    width: 100%;
+    height: 25rem;
+}
+article {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 120px;
+}
+article .image img{
+    width: 39rem;
+}
+article .text{
+    padding-top: 120px;
+}
+article .text h1{
+    font-size: 2.1rem;
+}
+article .text p{
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+article .text a{
+    color: rgba(0, 0, 0, 0.804);
+    font-weight: 600;
+    font-size: 18px;
+}
+footer{
+    display: flex;
+    background-color:black;
+    color: rgba(255, 255, 255, 0.557);
+    justify-content: space-between;
+    padding: 40px 120px;
+}
+footer ul{
+    list-style-type: none;
+    /* margin: 0 50px; */
+}
+footer ul:first-child{
+    width: 21rem;
+}
+footer ul{
+    color: rgba(255, 255, 255, 0.598);
+    margin-bottom: 10px;
+}
+footer ul li{
+    margin-bottom: 10px;
+}
+footer ul p{
+    color: rgba(255, 255, 255, 0.557);
+    line-height: 25px;
+}
+footer ul li:first-child{
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 600;
+}
+footer ul li a{
+    color: rgba(255, 255, 255, 0.598);
+    text-decoration: none;
+}
+/* DESKTOP */
+@media screen and (max-width:1440px) {
+    nav ul.menu img{
+        display: none;
+    }
+}
+/* TABLET */
+@media screen and (max-width:768px) {
+ 
+    .main{
+        padding: 40px 40px 0;
+        height: 65rem;
+    }
+    main{
+        display: inline-block;
+    }
+    main .text{
+        position:relative;
+        top: 19rem;
+    }
+    main .text h1{
+        font-size:3.5rem
+    }
+    main .text p{
+        width: 40rem;
+    }
+    main .mock-d{
+        background-image: url(Assets/Hero\ Image\ Tablet.png);
+        bottom: 40rem;
+    }
+    form input{
+        padding: 22px 20px;
+        width: 15rem;
+        border-radius: 8px;
+    }
+    form a{
+        padding:22px 25px ;
+        border-radius: 8px;
+    }
+    .social{
+        padding: 20px 40px;
+    }
+    section{
+        display: inline-block;
+        margin: 40px 40px;
+        height: 41rem;
+        width: 43rem;
+    }
+    section .mock-p{
+        background-image: url(Assets/Phone\ Tablet.png)
+    }
+    article{
+        display: inline-block;
+        padding: 20px 40px;
+    }
+    article .text{
+        padding-top: 20px;
+        position: relative;
+        bottom: 29rem;
+    }
+    article .image img{
+        width: 100%;
+        position: relative;
+        top: 10rem;
+    }
+    footer{
+        display: grid;
+        grid-gap: 10px; 
+        padding: 40px;
+    }
+    footer ul:first-child{ 
+        grid-area: 1 / 1 / 3 / 4;    
+    }
+    footer ul:nth-child(2){
+        grid-area: 1 / 4 / 3 / 5;
+    }
+    footer ul:nth-child(3){
+        grid-area: 1 / 5 / 3 / 6;
+    }
+    footer ul:nth-child(4){
+        grid-area: 4 / 1 / 6 / 2;
+    }
+    footer ul:last-child{
+        grid-area: 4 / 3 / 6 / 4;
+        margin-right: 7rem;
+    }
+}
+/* MOBILE */
+@media screen and (max-width:480px){
+    body{
+        font-size: 30px;
+    }
+    .main{
+        padding: 20px 20px;
+        width: 52rem;
+        height: 98rem;
+    }
+    nav ul.menu img{
+        display: inline;
+        position: relative;
+        left:26rem;
+    }
+    nav ul li{
+        display: none;
+    }
+    
+    /* .main nav{
+        display: none;
+    } */
+    main .mock-d{
+        background-image: url(Assets/Hero\ Image\ Mobile.png);
+        bottom: 40rem;
+        width: 49rem;
+        height: 49rem;
+        margin: 0 auto;
+    }
+    main .text{
+        position:relative;
+        top: 46rem;
+    }
+    main .text h1{
+        font-size:4rem
+    }
+    main .text p{
+        line-height: 40px;
+        width: 41rem;
+    }
+    form input{
+        padding: 40px 35px;
+        font-size: 30px;
+        width: 30rem;
+        border-radius: 8px;
+        margin-right: 20px;
+    }
+    form a{
+        padding:40px 35px ;
+        border-radius: 8px;
+    }
+    .social{
+        padding: 20px 20px;
+    }
+    .social img{
+        width: 55%;
+        padding: 0 10px;
+    }
+    .social img:nth-child(4){
+        display:none
+    }
+    .social img:nth-child(5){
+        display:none
+    }
+    .social img:nth-child(6){
+        display:none
+    }
+    .social img:nth-child(7){
+        display:none
+    }
+    .social img:last-child{
+        display:none
+    }
+    section{
+        margin: 20px;
+        height: 76.5rem;
+        width: 49.5rem;
+        padding: 0 40px;
+    }
+    section .article h1{
+        font-size:5rem;
+        margin-bottom:20px;
+        width:40rem;
+    }
+    section .article p{
+    line-height:40px;
+    width: 35rem;
+    }
+    section .article a{
+        font-size: 30px;
+    }
+    section .mock-p{
+        background-image: url(Assets/Phone\ Mobile.png);
+        width: 100%;
+        height: 40rem;
+        position: relative;
+        bottom: 0.5rem;
+    }
+    article{
+        padding:40px 20px;
+        
+    }
+    article .text{
+        padding-top: 20px;
+        position: relative;
+        bottom: 20rem;
+    }
+    article .text h1{
+        font-size:4rem;
+        width: 40rem;
+    }
+    article .text p{
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+    article .image img{
+        width: 100%;
+        position: relative;
+        top: 30rem;
+    }
+    footer{
+        display: grid;
+        width: 52rem;
+        grid-template-columns: repeat(5 1fr);
+        grid-template-rows: repeat(5 1fr);
+    }
+    footer ul:first-child{ 
+        grid-area: 1 / 1 / 3 / 6;    
+        width: 100%;
+    }
+    footer ul p{
+        line-height:45px
+    } 
+    footer ul:nth-child(2){
+        grid-area: 3 / 1 / 4 / 3;
+    }
+    footer ul:nth-child(3){
+        grid-area: 3 / 4 / 4 / 6;
+    }
+    footer ul:nth-child(4){
+        grid-area: 5 / 1 / 6 / 3;
+    }
+    footer ul:last-child{
+        grid-area: 5 / 4 / 6 / 6;
+        margin-right: 7rem;
+    }
+
+}
